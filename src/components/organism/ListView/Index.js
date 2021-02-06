@@ -23,7 +23,7 @@ const ListView = (props) => {
               </span>
               <span>{each.vote}</span>
             </div>
-            <a className="album-name" href={each.more_info}>
+            <a className="album-name" target="_blank" href={each.more_info}>
               {each.album_name}
             </a>
             <p className="band-name">{`${each.band_name}, ${each.release_year}`}</p>
