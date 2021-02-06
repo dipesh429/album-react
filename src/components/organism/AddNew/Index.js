@@ -1,7 +1,7 @@
+import { options } from '../../../mock/users';
 import { Button } from '../../atom/Button/Index';
 import { Input } from '../../atom/Input';
 import { Select } from '../../atom/Select';
-const options = ['John', 'Harry', 'Alex'];
 
 const AddNew = (props) => {
   const { handleSubmit, handleChange, currentValue } = props;

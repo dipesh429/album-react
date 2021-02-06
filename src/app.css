@@ -25,11 +25,16 @@ p {
 
 .album-name {
   text-decoration: none;
+  color: #7a10b7;
 }
-
+.avatar-block {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
 .submitted-by {
   color: gray;
-  margin-top: 10px;
+  margin-right: 5px;
 }
 
 .vote {
@@ -37,8 +42,9 @@ p {
 }
 
 .arrow-up {
-  color: blueviolet;
+  color: burlywood;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 .add-new {

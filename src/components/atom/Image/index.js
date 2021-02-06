@@ -1,8 +1,14 @@
 import './Image.css';
 
 const Image = (props) => {
-  const { url, alt } = props;
-  return <img className="album-image" src={url} alt={alt} />;
+  const { url, alt, type } = props;
+  return (
+    <img
+      className={`${type === 'avatar' ? 'avatar' : 'album-image'}`}
+      src={url}
+      alt={alt}
+    />
+  );
 };
 
 export { Image };

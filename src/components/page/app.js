@@ -18,6 +18,18 @@ export class App extends Component {
     total: albums,
   };
 
+  handleVote = (index) => {
+    this.setState((current) => {
+      let final = [...current.total];
+      let updateItem = { ...final[index] };
+      final[index] = { ...updateItem, vote: ++updateItem.vote };
+      return {
+        new: current.new,
+        total: final,
+      };
+    });
+  };
+
   handleChange = (event) => {
     this.setState((current) => ({
       total: [...current.total],
@@ -49,7 +61,10 @@ export class App extends Component {
     return (
       <div className="wrapper">
         <p className="heading"> Popular Metal Albums</p>
-        <ListView albums={this.state.total} />
+        <ListView
+          albums={this.state.total}
+          handleVote={(index) => this.handleVote(index)}
+        />
         <AddNew
           currentValue={this.state.new}
           handleSubmit={this.handleSubmit}
