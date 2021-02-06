@@ -9,7 +9,7 @@ const ListView = (props) => {
     return users.find((user) => user.name === name).avatar;
   };
 
-  return (
+  return albums.length ? (
     albums
       //sort with highest vote
       .sort((x, y) => y.vote - x.vote)
@@ -41,6 +41,8 @@ const ListView = (props) => {
           </button>
         </div>
       ))
+  ) : (
+    <span className="no-album"> There is no albums. Please Add New Album Below </span>
   );
 };
 

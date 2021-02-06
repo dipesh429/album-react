@@ -44,6 +44,11 @@ p {
   text-decoration: none;
   color: #7a10b7;
 }
+
+.no-album {
+  color: gray;
+}
+
 .avatar-block {
   margin-top: 10px;
   display: flex;
@@ -65,5 +70,6 @@ p {
 }
 
 .add-new {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
