@@ -57,6 +57,17 @@ export class App extends Component {
     }));
   };
 
+  handleRemove = (index) => {
+    this.setState((current) => {
+      let newSet = [...current.total];
+      newSet.splice(index, 1);
+      return {
+        ...current,
+        total: newSet,
+      };
+    });
+  };
+
   render() {
     return (
       <div className="wrapper">
@@ -64,6 +75,7 @@ export class App extends Component {
         <ListView
           albums={this.state.total}
           handleVote={(index) => this.handleVote(index)}
+          removeItem={(index) => this.handleRemove(index)}
         />
         <AddNew
           currentValue={this.state.new}
