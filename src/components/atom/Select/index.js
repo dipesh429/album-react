@@ -1,13 +1,15 @@
-import "./Select.css"
+import './Select.css';
 const Select = (props) => {
-  const { options, placeholder } = props;
+  const { options, placeholder, ...rest } = props;
   return (
-    <select className="select">
-      <option value="" disabled selected>
+    <select  className="select"  {...rest}>
+      <option value="" disabled>
         {placeholder}
       </option>
-      {options.map((option) => (
-        <option value={option}>{option}</option>
+      {options.map((option, index) => (
+        <option key={index} value={option}>
+          {option}
+        </option>
       ))}
     </select>
   );

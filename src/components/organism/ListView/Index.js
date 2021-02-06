@@ -5,9 +5,10 @@ const placeholder =
 const ListView = (props) => {
   const { albums } = props;
   return albums
-    .sort((x, y) => x.vote - y.vote)
+  //sort with highest vote
+    .sort((x, y) => y.vote - x.vote)
     .map((each, index) => (
-      <div className="album">
+      <div key={index} className="album">
         <Image url={each.album_url || placeholder} alt="album" />
         <div className="album-right">
           <div className="vote">
