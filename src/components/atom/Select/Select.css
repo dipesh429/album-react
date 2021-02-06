@@ -1,0 +1,10 @@
+.select {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    height: 30px;
+    border-radius: 8px;
+    width: 200px;
+    background-color: #fff;
+    outline: none;
+  }

@@ -1,0 +1,46 @@
+p {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 300px;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.album {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.album-name {
+  text-decoration: none;
+}
+
+.submitted-by {
+  color: gray;
+  margin-top: 10px;
+}
+
+.vote {
+  margin-bottom: 5px;
+}
+
+.arrow-up {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.add-new {
+  margin-bottom: 20px;
+}
